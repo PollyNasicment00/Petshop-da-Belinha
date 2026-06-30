@@ -1,0 +1,1019 @@
+/*COLORAÇÃO BASE*/
+html, body{
+    overflow-x: hidden;
+}
+.verdeescuro {
+    background-color: #224A25;
+    height: 40px;
+    width: 100%;
+}
+
+.verdecomprofile {
+    background-color: #3C7F3C;
+    height: 55px;
+    width: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.inicio {
+    background-color: #361047;
+    width: 100%;
+    height: 550px;
+     border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+.animais{
+    background-color: #C3E7B0;
+     width: 100%;
+    height: 550px;
+}
+.adoção{
+    background-color:#E4A6EF ;
+     width: 100%;
+    height: 650px;
+}
+.produtos{
+    background-color: #E45B5B;
+     width: 100%;
+    height: 600px;
+}
+
+
+
+.serviçosemimagens{
+    display: flex;
+    gap: 0px; 
+    justify-content: center;
+    align-items: center;
+    background-color: #C3E7B0;
+    position: relative;
+}
+
+/*IMAGENS DE SERVICINHOS*/
+.destaque{
+    width: 380px;  
+    height: 380px;
+}
+.camaselares{
+    width: 380px;  
+    height: 380px;
+}
+.rações{
+    width: 380px;  
+    height: 380px;
+}
+.acessorios{
+    width: 380px;  
+    height: 380px;
+    z-index: 1;
+}
+.transporte{
+    width: 400px;  
+    height: 400px;
+}
+.banho{
+    width: 400x;  
+    height: 400px;
+}
+.hotel{
+    width: 400px;  
+    height: 400px;
+}
+.programa{
+    width: 400px; 
+    height: 400px;
+}
+#partedois{
+    background-color: #E45B5B;
+}
+.acessoriosbt{
+    position: absolute;
+    width: 180px;
+    height: 50px;
+    left: 100px; /* ajuste até encaixar */
+    top: 285px;  /* ajuste até encaixar */
+    z-index: 999;
+    background-color: #830d0d;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-family: "Anton", sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.acessoriosbt:hover{
+    transform: scale(1.05);
+    background-color: #E45B5B;
+    box-shadow: 0 0 20px rgba(54,16,71,0.7);
+}
+.racoesbt{
+    position: absolute;
+    width: 180px;
+    height: 50px;
+    left: 420px; /* ajuste até encaixar */
+    top: 135px;  /* ajuste até encaixar */
+    z-index: 999;
+    background-color: #ffffff;
+    color: rgb(116, 81, 81);
+    border: none;
+    border-radius: 12px;
+    font-family: "Anton", sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.racoesbt:hover{
+    transform: scale(1.05);
+    background-color: #a23eaf;
+    box-shadow: 0 0 20px rgba(54,16,71,0.7);
+}
+.camaelarbt{
+    position: absolute;
+    width: 180px;
+    height: 50px;
+    left: 760px; /* ajuste até encaixar */
+    top: 85px;  /* ajuste até encaixar */
+    z-index: 999;
+    background-color: #9e1097;
+    color: rgb(226, 220, 220);
+    border: none;
+    border-radius: 12px;
+    font-family: "Anton", sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.camaelarbt:hover{
+    transform: scale(1.05);
+    background-color: #b4a9a9;
+    box-shadow: 0 0 20px rgba(54,16,71,0.7);
+}
+.destaquebt{
+    position: absolute;
+    width: 180px;
+    height: 50px;
+    left: 1100px; /* ajuste até encaixar */
+    top: 125px;  /* ajuste até encaixar */
+    z-index: 999;
+    background-color: #ffffff;
+    color: rgb(255, 0, 0);
+    border: none;
+    border-radius: 12px;
+    font-family: "Anton", sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.destaquebt:hover{
+    transform: scale(1.05);
+    background-color: #000000;
+    box-shadow: 0 0 20px rgba(54,16,71,0.7);
+}
+
+.transportebt{
+    position: absolute;
+    width: 180px;
+    height: 50px;
+    left: 100px; /* ajuste até encaixar */
+    top: 285px;  /* ajuste até encaixar */
+    z-index: 999;
+    background-color: #2dd365;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-family: "Anton", sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.transportebt:hover{
+    transform: scale(1.05);
+    background-color: #E45B5B;
+    box-shadow: 0 0 20px rgba(54,16,71,0.7);
+}
+.banhobt{
+    position: absolute;
+    width: 180px;
+    height: 50px;
+    left: 400px; /* ajuste até encaixar */
+    top: 285px;  /* ajuste até encaixar */
+    z-index: 999;
+    background-color: #5a1212;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-family: "Anton", sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.banhobt:hover{
+    transform: scale(1.05);
+    background-color: #5a2dc2;
+    box-shadow: 0 0 20px rgba(198, 193, 201, 0.7);
+}
+.hotelbt{
+    position: absolute;
+    width: 180px;
+    height: 50px;
+    left: 700px; /* ajuste até encaixar */
+    top: 305px;  /* ajuste até encaixar */
+    z-index: 999;
+    background-color: #adaaaa;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-family: "Anton", sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.hotelbt:hover{
+    transform: scale(1.05);
+    background-color: #166338;
+    box-shadow: 0 0 20px rgba(198, 193, 201, 0.7);
+}
+.programabt{
+    position: absolute;
+    width: 180px;
+    height: 50px;
+    left: 1090px; /* ajuste até encaixar */
+    top: 305px;  /* ajuste até encaixar */
+    z-index: 999;
+    background-color: #b619bb;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-family: "Anton", sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.programabt:hover{
+    transform: scale(1.05);
+    background-color: #350f58;
+    box-shadow: 0 0 20px rgba(198, 193, 201, 0.7);
+}
+
+/*IMAGENS DO INICIO*/
+.gatinho{
+    width: 500px;   
+    height: auto;
+    position: absolute;
+    right: 0;       
+    top: 49px;  
+     z-index: 2;    
+}
+.circulo{
+    position: absolute;
+    background-color: #2b0a3d; /* roxo escuro profundo */
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.grande1{
+    width: 150px;
+    height: 150px;
+    top: 480px;
+    right: 500px;
+    opacity: 0.7;
+}
+
+.grande2{
+    width: 500px;
+    height: 500px;
+    top: 140px;
+    right: 50px;
+    opacity: 0.5;
+}
+
+.grande3{
+    width: 150px;
+    height: 150px;
+    top: 120px;
+    left: 10px;
+    opacity: 0.4;
+}
+.grande4{
+    width: 80px;
+    height: 80px;
+    top: 120px;
+    left: 175px;
+    opacity: 0.4;
+}
+.patas{
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    transform: rotate(5deg);
+    z-index: 1;
+    opacity: 0.7;
+    right: 30px;
+}
+
+/*Imagens no header*/
+.logomaior{
+    width: 55px;
+    height:55px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.molduravermelha{
+    width: 70px;
+    height: 30px;
+    background-color: #59112D ;
+    position: absolute;
+    right: 20px;
+    top: 55px;
+    border-radius: 12px;
+}
+.shop{
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 1px;
+    right: 30px;
+}
+
+.buy{
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 1px;
+    right: 2px; 
+}
+.perfil{
+    width: 50px;
+    height:50px;
+    position: absolute;
+    right: 10%;
+    top: 45px;
+}
+.cadastrarbt{
+    top: 350px;
+    left: 10%;
+}
+.cta{
+    top: 300px;
+    left:25%;
+}
+.aanimais{
+    font-family: "Anton", sans-serif;
+    background: transparent; 
+    top: 55px;
+    position: absolute;
+    left: 2%;
+}
+.sserviços{
+    font-family: "Anton", sans-serif;
+    background: transparent; 
+    top: 55px;
+    position: absolute;
+    left: 8%;
+}
+.aadoção{
+    font-family: "Anton", sans-serif;
+    background: transparent; 
+    top: 55px;
+    position: absolute;
+    left: 13%;
+}
+.novidades{
+    font-family: "Anton", sans-serif;
+    background: transparent; 
+    top: 55px;
+    position: absolute;
+    left: 24%;
+}
+.frasepromocional{
+    font-family: "Anton", sans-serif;
+    background: transparent; 
+    top: 200px;
+    position: absolute;
+    left: 3%;
+    font-size: 79px;
+    color: white;
+}
+.frasepromocional2{
+    font-family: "Anton", sans-serif;
+    background: transparent; 
+    top: 280px;
+    position: absolute;
+    left: 3%;
+    font-size: 79px;
+    color: white;
+}
+
+/*imagens de ANIMAIS*/
+.caveirinha{
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    left: 47%
+}
+.incluir {
+    font-family: "Anton", sans-serif;
+    font-size: 20px;
+    top: 700px;
+    left: 45%;
+    position:absolute;
+}
+.textodepets{
+    font-family: "Anton SC", sans-serif;
+    color: #361047;
+    font-size: 30px;
+    top:750px;
+    left: 35%;
+    position: absolute;
+}
+
+.ani1,
+.ani2,
+.ani3,
+.ani4,
+.ani5,
+.ani6{
+    width: 120px;
+    height: 120px;
+
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 35px;
+     margin-left: 28px;
+    border: transparent;
+}
+.tipodepets{
+    font-family: "Anton SC", sans-serif;
+    color: #361047;
+    font-size: 30px;
+    left: 9%;
+    position: absolute;
+}
+.tipodepets2{
+    font-family: "Anton SC", sans-serif;
+    color: #361047;
+    font-size: 30px;
+    left: 24%;
+    position: absolute;
+}
+.tipodepets3{
+    font-family: "Anton SC", sans-serif;
+    color: #361047;
+    font-size: 30px;
+    left: 37%;
+    position: absolute;
+}
+.tipodepets4{
+    font-family: "Anton SC", sans-serif;
+    color: #361047;
+    font-size: 30px;
+    left: 53%;
+    position: absolute;
+}
+.tipodepets5{
+    font-family: "Anton SC", sans-serif;
+    color: #361047;
+    font-size: 30px;
+    left: 69%;
+    position: absolute;
+}
+.tipodepets6{
+    font-family: "Anton SC", sans-serif;
+    color: #361047;
+    font-size: 30px;
+    left: 82%;
+    position: absolute;
+}
+/*imagens de Adoção*/
+
+.sistemadeadocao {
+    font-family: "Anton", sans-serif;
+    font-size: 20px;
+    top: 1640px;
+    left: 44%;
+    position:absolute;
+}
+.animais{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.fundo1,
+.fundo2,
+.fundo3,
+.fundo4,
+.fundo5,
+.fundo6{
+    width: 180px;
+    height: 250px;
+    background-color: #adc99e;
+  margin-top: 160px;
+}
+.miau{
+    width: 480px;
+    height: 480px;
+    top: 1746px;
+    position: absolute;
+    left: 35%;
+    z-index: 2;
+}
+.star{
+    width: 800px;
+    height: 800px;
+    z-index: 2;
+    top: 1450px;
+    left: 22%;
+    position: absolute;
+}
+
+.save{
+    width: 75px;
+    height: 75px;
+    margin-left: 350px;
+    margin-top: 25px; 
+}
+#salva{
+    font-size: 25px;
+    margin-left: 110px;
+    margin-top: -50px;
+    color:#59112D ;
+    font-family: "Archivo Black", sans-serif;
+}
+#textsalva{
+    font-family: "Abhaya Libre", serif;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 60px;
+    color: black;
+}
+
+.textodeadocao{
+    font-family: "Anton SC", sans-serif;
+    color: #361047;
+    font-size: 30px;
+    top:1680px;
+    left: 35%;
+    position: absolute;
+}
+.custa{
+    width: 120px;
+    height: 120px;
+    margin-left: 300px;
+    margin-top: 25px; 
+}
+#textcustar{
+    font-family: "Abhaya Libre", serif;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 20px;
+    color: black;
+}
+#custar{
+    font-size: 25px;
+    margin-left: 110px;
+    margin-top: -50px;
+    color:#59112D ;
+    font-family: "Archivo Black", sans-serif;
+}
+.ajuda{
+    width: 90px;
+    height: 90px;
+    margin-left: 380px;
+    margin-top: 25px; 
+}
+#ajudar{
+    font-family: "Archivo Black", sans-serif;
+    font-size: 25px;
+    margin-left: 110px;
+    margin-top: -50px;
+    color:#59112D ;
+}
+#textajuda{
+    font-family: "Abhaya Libre", serif;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 20px;
+    color: black;
+}
+.mercado{
+     position: absolute;
+    width: 75px;
+    height: 75px;
+    left: 900px;
+    top: 1600px;
+    
+}
+#merca{
+    font-family: "Archivo Black", sans-serif;
+    font-size: 25px;
+    position: absolute;
+    right: 10px;
+    top: 1620px;
+    color:#59112D ;
+}
+#textmerca{
+    font-family: "Abhaya Libre", serif;
+    font-size: 20px;
+    top: 1670px;
+    right: 40px;
+    color: black;
+    position: absolute;
+}
+.amor{
+     position: absolute;
+    width: 88px;
+    height: 88px;
+    right: 350px;
+    top: 1760px;
+}
+#love{
+    font-family: "Archivo Black", sans-serif;
+    font-size: 25px;
+    position: absolute;
+    right: 100px;
+    top: 1830px;
+    color:#59112D ;
+}
+#textlove{
+    font-family: "Abhaya Libre", serif;
+    font-size: 20px;
+    top: 1870px;
+    right: 40px;
+    color: black;
+    position: absolute;
+}
+.person{
+     position: absolute;
+    width: 80px;
+    height: 80px;
+    right: 350px;
+    top: 2000px;
+}
+#persona{
+    font-family: "Archivo Black", sans-serif;
+    font-size: 25px;
+    position: absolute;
+    right: 50px;
+    top: 2030px;
+    color:#59112D ;
+}
+#textperson{
+    font-family: "Abhaya Libre", serif;
+    font-size: 20px;
+    top: 2090px;
+    right: 30px;
+    color: black;
+    position: absolute;
+}
+/*imagens de Produtos*/
+.ineditos {
+    font-family: "Anton", sans-serif;
+    font-size: 20px;
+    top: 2285px;
+    left: 45%;
+    position:absolute;
+}
+.textoineditos{
+    font-family: "Anton SC", sans-serif;
+    color: #ffffff;
+    font-size: 30px;
+    top:2320px;
+    left: 38%;
+    position: absolute;
+}
+.prod1, .prod2, .prod3, .prod4, .prod5{
+  width: 180px;
+  height: 220px;
+  border: 3px solid #7D7070; 
+  background-color: transparent;
+  position: absolute;
+  top: 2400px;
+}
+.prod1{
+  top: 2400px;
+  left: 5%;
+}
+.prod2{
+  top: 2400px;
+  left: 23%;
+}
+.prod3{
+  top: 2400px;
+  left: 43%;
+}
+.prod4{
+  top: 2400px;
+  left: 62%;
+}
+.prod5{
+  top: 2400px;
+  left: 82%;
+}
+.preço1, .preço2, .preço3, .preço4, .preço5{
+  width: 180px;
+  height: 45px;
+
+  background-color: #A84242;
+
+  position: absolute;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: white;
+  font-family: "Anton SC", sans-serif;
+  font-size: 18px;
+}
+.preço1{
+  top: 2620px;
+  left: 5%;
+}
+
+.preço2{
+  top: 2620px;
+  left: 23%;
+}
+
+.preço3{
+  top: 2620px;
+  left: 43%;
+}
+
+.preço4{
+  top: 2620px;
+  left: 62%;
+}
+
+.preço5{
+  top: 2620px;
+  left: 82%;
+}
+.item1{
+    width: 170px;
+    height: 170px;
+    margin-top: 45px;
+    margin-left: 5px;
+}
+.item2{
+    width: 170px;
+    height: 170px;
+    margin-top: 45px;
+    margin-left: 5px;
+}
+.item3{
+    width: 170px;
+    height: 170px;
+    margin-top: 45px;
+    margin-left: 5px;
+}
+.item4{
+    width: 150px;
+    height: 150px;
+    margin-top: 45px;
+    margin-left: 10px;
+}
+.item5{
+    width: 170px;
+    height: 170px;
+    margin-top: 45px;
+    margin-left: 5px;
+}
+.preço1,
+.preço2,
+.preço3,
+.preço4,
+.preço5{
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    line-height: 1.2;
+}
+
+.preço1 span,
+.preço2 span,
+.preço3 span,
+.preço4 span,
+.preço5 span{
+    display: block;
+    font-size: 12px;
+    color: #62b870; /* dourado */
+}
+
+
+/*efeitos especiais*/
+
+/*EFEITO DE SUMIR E VIR*/
+.animar {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s ease;
+}
+
+.animar.mostrar {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.aanimais,
+.sserviços,
+.aadoção,
+.novidades{
+    text-decoration: none;
+    color: inherit;
+}
+/* ===== SEGURA O TEXTO DENTRO DOS CARDS ===== */
+.conteudo-fundo{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+/* mantém fundo estável e pronto pra hover */
+.fundo1, .fundo2, .fundo3, .fundo4, .fundo5, .fundo6{
+  width: 180px;
+  height: 250px;
+  background-color: #adc99e;
+  margin-top: 160px;
+
+  position: relative;
+  overflow: hidden;
+
+  transition: all 0.3s ease;
+}
+
+/* 👇 hover mágico sem bagunçar texto */
+.fundo1:hover,
+.fundo2:hover,
+.fundo3:hover,
+.fundo4:hover,
+.fundo5:hover,
+.fundo6:hover{
+  transform: translateY(-12px) scale(1.05);
+  box-shadow: 0 0 30px rgba(0,0,0,0.25);
+  filter: brightness(1.1);
+  z-index: 10;
+}
+
+/* garante que texto nunca “escorrega” */
+.tipodepets,
+.tipodepets2,
+.tipodepets3,
+.tipodepets4,
+.tipodepets5,
+.tipodepets6{
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
+.prod1, .prod2, .prod3, .prod4, .prod5{
+  transition: all 0.3s ease;
+}
+
+/* hover individual */
+.prod1:hover,
+.prod2:hover,
+.prod3:hover,
+.prod4:hover,
+.prod5:hover{
+  transform: translateY(-10px) scale(1.06);
+  box-shadow: 0 0 35px rgba(0,0,0,0.35);
+  filter: brightness(1.15);
+  z-index: 10;
+}
+
+/*Imagens do RODAPÉ*/
+.rodape{
+    background-color: rgb(207, 79, 79);
+    height: 450px;
+    position: relative;
+}
+
+.logocompl{
+    width: 180px;
+    height: 180px;
+
+    position: absolute;
+    left: 20px;
+    top: 230px;
+}
+
+.nomedocriador{
+    width: 100%;
+    height: 45px;
+    background-color: rgb(133, 43, 43);
+
+    position: absolute;
+    bottom: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nomedocriador a{
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+}
+.divisor{
+    width: 100%;
+    height: 50px;
+    background-color:  #E45B5B;
+}
+.linksfooter{
+    display: flex;
+    gap: 80px;
+    justify-content: center;
+    margin-top: 150px;
+}
+
+.colunafooter{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.colunafooter a{
+    color: white;
+    text-decoration: none;
+    font-family: "Anton", sans-serif;
+}
+
+.colunafooter a:hover{
+    text-decoration: underline;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* ===== CORREÇÃO 3: impede estouro horizontal das seções ===== */
+section,
+.inicio,
+.animais,
+.adoção,
+.produtos,
+.serviçosemimagens,
+.rodape{
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+@media (max-width: 768px){
+
+    .serviçosemimagens{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .acessorios,
+    .rações,
+    .camaselares,
+    .destaque,
+    .transporte,
+    .banho,
+    .hotel,
+    .programa{
+        width: 90%;
+        height: auto;
+    }
+
+    .acessoriosbt,
+    .racoesbt,
+    .camaelarbt,
+    .destaquebt,
+    .transportebt,
+    .banhobt,
+    .hotelbt,
+    .programabt{
+        position: static;
+        margin-top: 10px;
+    }
+}

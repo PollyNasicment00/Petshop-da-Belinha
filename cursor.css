@@ -1,0 +1,32 @@
+ html, body {
+    cursor: none; /* esconde o cursor padrão */
+  }
+
+  #catCursor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 56px;
+    height: 56px;
+    pointer-events: none;
+    z-index: 9999;
+    will-change: transform;
+    filter: drop-shadow(0 3px 4px rgba(0,0,0,.15));
+  }
+
+  .paw {
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 9998;
+    will-change: transform, opacity;
+  }
+  .paw-inner {
+    animation: pawLife 0.9s ease-out forwards;
+  }
+  @keyframes pawLife {
+    0%   { opacity: .95; transform: scale(0.4); }
+    25%  { opacity: .9;  transform: scale(1); }
+    100% { opacity: 0;   transform: scale(1.25); }
+  }
