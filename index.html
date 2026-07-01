@@ -3,7 +3,7 @@
 
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=1400">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -68,6 +68,10 @@
   </svg>
 </div>
 
+<!-- A partir daqui, TODO o site fica dentro do #pageScale.
+     É esse wrapper que o escala.js encolhe/aumenta pra caber
+     em qualquer tela, mantendo tudo exatamente no mesmo lugar. -->
+<div id="pageScale">
 
 <!-- TOPO -->
 
@@ -387,7 +391,12 @@
         </a>
     </div>
 </footer>
+
+</div>
+<!-- fim do #pageScale -->
+
 <script src="cursor.js"></script>
+<script src="escala.js"></script>
 <script>
 const elementos = document.querySelectorAll('.animar');
 
