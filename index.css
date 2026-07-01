@@ -1,7 +1,24 @@
-/*COLORAÇÃO BASE*/
+/* ======================================================
+   SISTEMA DE ESCALA RESPONSIVA
+   O design inteiro continua desenhado em 1400px (igual
+   sempre foi). O JS (escala.js) encolhe/aumenta a página
+   toda proporcionalmente pra caber em qualquer tela, sem
+   mudar nenhuma posição, tamanho ou fonte do design.
+   ====================================================== */
 html, body{
-    overflow-x: hidden;
+    margin:0;
+    padding:0;
+    overflow-x:hidden;
+    background-color:#361047;
 }
+
+#pageScale{
+    width:1400px;
+    transform-origin: top left;
+    position:relative;
+}
+
+/*COLORAÇÃO BASE*/
 .verdeescuro {
     background-color: #224A25;
     height: 40px;
@@ -984,36 +1001,7 @@ section,
     overflow-x: hidden;
 }
 
-@media (max-width: 768px){
-
-    .serviçosemimagens{
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 20px;
-        padding: 20px;
-    }
-
-    .acessorios,
-    .rações,
-    .camaselares,
-    .destaque,
-    .transporte,
-    .banho,
-    .hotel,
-    .programa{
-        width: 90%;
-        height: auto;
-    }
-
-    .acessoriosbt,
-    .racoesbt,
-    .camaelarbt,
-    .destaquebt,
-    .transportebt,
-    .banhobt,
-    .hotelbt,
-    .programabt{
-        position: static;
-        margin-top: 10px;
-    }
-}
+/* O media query antigo (max-width:768px) foi removido porque
+   agora QUEM cuida da responsividade é o sistema de escala
+   em #pageScale + escala.js. Deixar os dois juntos causaria
+   bugs (a página reflowiria dentro do canvas escalado). */
